@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Send";
+}
+
+<h2>Send</h2>
+
+<div>
+    @Html.Encode(ViewData["PostData"])<br />
+    @{
+        if (1+2==4) 
+        {
+            WriteLiteral("1+2=4");
+            <br />
+        }
+        else
+        {
+            WriteLiteral("1+2<>4");
+            <br />
+        }
+    }
+
+</div>

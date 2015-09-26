@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div>
+    @using (Html.BeginForm("Send", "Home", null, FormMethod.Post,
+        new { enctype = "multipart/form-data" }))
+    {
+        <text>２つの数字を入力してください。</text><br />
+        <text>textbox1                            textbox2</text><br />
+        @Html.TextBox("value1", "", new { maxlength = 20 })
+        @Html.TextBox("value2", "", new { maxlength = 20 })
+        <input type="submit" value="送信" />
+    }
+</div>

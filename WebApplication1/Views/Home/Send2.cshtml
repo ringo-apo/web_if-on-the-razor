@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Send";
+}
+
+<h2>Send</h2>
+
+<div>
+    @Html.Encode(ViewData["PostData"])<br />
+    @for (int i = 1; i <= int.Parse("10"); i++)
+    {
+        WriteLiteral(i);
+        WriteLiteral(i);
+        <br />
+    }
+</div>
